@@ -23,6 +23,10 @@ gh api repos/{owner}/{repo}/issues/comments/{comment_id}
 - **投稿時刻**: どのコミット時点のコードを見たレビューかを特定するために重要
 - **レビュー種別**: インラインコメント / レビュー本文 / issue コメント
 
+### ラウンド採番
+
+`gh api repos/{owner}/{repo}/pulls/{pr}/reviews` で全 review submit event を取得し、レビュアーごとに `submitted_at` 昇順で R1, R2, ... と採番する。各主張には `{reviewer}-R{round}.{number}` 形式の ID を付与する。詳細は `references/finding-numbering.md` を参照。
+
 ## Phase 2: レビュー対象コードの特定
 
 レビューがどの時点のコードを対象にしているかを特定する。これを間違えると検証結果が無意味になる。
