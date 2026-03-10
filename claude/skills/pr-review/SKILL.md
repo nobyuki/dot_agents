@@ -24,10 +24,13 @@ description: >
 
 GitHub PR のコードレビューを実施し、構造化された markdown レポートを出力する。
 
-詳細:
-- レポートテンプレート: `references/templates.md`
-- 品質基準・重要度分類・他ツールマージ: `references/quality-standards.md`
-- Finding ナンバリング規則: `references/finding-numbering.md`
+## リファレンス
+
+| ファイル | 内容 | 参照タイミング |
+|---------|------|--------------|
+| `references/templates.md` | レポートテンプレート | Step 4: レポート出力時 |
+| `references/quality-standards.md` | 品質基準・重要度分類・他ツールマージ | Step 2: 差分分析時 |
+| `references/finding-numbering.md` | Finding ナンバリング規則 | Step 4: レポート出力時 |
 
 ## ワークフロー
 

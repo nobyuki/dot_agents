@@ -60,8 +60,8 @@ description: >
 
 ## リファレンス
 
-| ファイル | 内容 |
-|---------|------|
-| `references/structure-guide.md` | テンプレート詳細（各セクションの書き方、コードスニペット例、既存計画書参照） |
-| `references/project-knowledge.md` | アーキテクチャレイヤー、コード変更パターン、画面更新・テスト計画の記載ルール |
-| `references/checklist.md` | 計画書完成前の品質チェックリスト |
+| ファイル | 内容 | 参照タイミング |
+|---------|------|--------------|
+| `references/structure-guide.md` | テンプレート詳細（各セクションの書き方、コードスニペット例、既存計画書参照） | Step 2: 計画書の作成時 |
+| `references/project-knowledge.md` | アーキテクチャレイヤー、コード変更パターン、画面更新・テスト計画の記載ルール | Step 1-2: 情報収集・作成時 |
+| `references/checklist.md` | 計画書完成前の品質チェックリスト | Step 3: ユーザーレビュー前 |
