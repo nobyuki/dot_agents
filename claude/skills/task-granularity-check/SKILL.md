@@ -48,3 +48,4 @@ description: >
 | `jira-ticket` | 要件整理時にチケットの分割要否を判断する際 |
 | `pr-review` | PRの粒度・混入物を評価する際 |
 | `verify-review` | レビュー指摘の中でタスク切り出し提案の妥当性を検証する際 |
+| `jira-sprint-report` | スプリントレポート生成時に各チケットの粒度を判定する際 |
