@@ -32,6 +32,14 @@ GitHub PR のコードレビューを実施し、構造化された markdown レ
 | `references/quality-standards.md` | 品質基準・重要度分類・他ツールマージ | Step 2: 差分分析時 |
 | `references/finding-numbering.md` | Finding ナンバリング規則 | Step 4: レポート出力時 |
 
+## 関連スキル
+
+### 参照先
+
+| スキル名 | 参照タイミング | 用途 |
+|---------|--------------|------|
+| `task-granularity-check` | Step 2: PRの粒度・混入物を評価する際 | 分割評価基準に従い、後続タスクへの切り出しを提案する |
+
 ## ワークフロー
 
 ### Step 1: PR 情報の収集

@@ -62,3 +62,11 @@ description: >
 | `references/structure-guide.md` | テンプレート詳細（各セクションの書き方、記載パターン A/B/C、既存計画書参照） | Step 3: 計画書の作成時 |
 | `references/survey-targets.md` | ドキュメントサーベイ対象の全リスト（優先度別） | Step 2: ドキュメントサーベイ時 |
 | `references/checklist.md` | 計画書完成前の品質チェックリスト | Step 4: 実装前の最終確認 |
+
+## 関連スキル
+
+### 参照先
+
+| スキル名 | 参照タイミング | 用途 |
+|---------|--------------|------|
+| `task-granularity-check` | Step 3: Step単位の分割粒度を決定する際 | 分割評価基準・スコープトリアージに従い、タスクの分割要否を判断する |
