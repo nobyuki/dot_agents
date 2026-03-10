@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Reviewer"
+  short_description: "Review implementation plans and flag risks."
+  default_prompt: "Review this implementation plan and report prioritized findings with concrete evidence and test gaps."
