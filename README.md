@@ -9,11 +9,22 @@ AI コーディングエージェントの設定・カスタマイズ集。
 | `claude/` | Claude Code のカスタムスキル |
 | `codex/` | Codex の設定（準備中） |
 
+## セットアップ
+
+本リポジトリは各エージェントの設定ディレクトリへシンボリックリンクして使用します。
+
+```bash
+# Claude Code
+ln -s /path/to/dot_agents/claude/skills ~/.claude/skills
+```
+
+リンク先のパスはエージェントごとに異なります。各セクションを参照してください。
+
 ## Claude Code
 
 ### スキル
 
-`claude/skills/` 配下にカスタムスキルを格納しています。`~/.claude/skills/` にコピーまたはシンボリックリンクして使用します。
+`claude/skills/` 配下にカスタムスキルを格納しています。上記のシンボリックリンクで `~/.claude/skills/` に配置します。
 
 ### Serena メモリへの依存
 
