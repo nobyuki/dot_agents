@@ -51,3 +51,13 @@ description: >
 | `references/workflow.md` | ワークフロー詳細手順（Phase 1-5 の全16ステップ） | Phase 1-5: 各フェーズの実行時 |
 | `references/commit-format.md` | コミットメッセージのフォーマット、type/scope の選び方 | Phase 5: コミット提案時 |
 | `references/pitfalls.md` | よくある落とし穴（DI引数追加、期待値変更、型リテラル間違いなど） | Phase 1: 準備時、Phase 3-4: 実装・検証時、Phase 5: コミット後 |
+
+## 関連スキル
+
+### 参照元
+
+以下のスキルがコミットメッセージ規約を参照する:
+
+| スキル名 | 参照タイミング |
+|---------|--------------|
+| `pr-create` | PR タイトルの type を決定する際 |
