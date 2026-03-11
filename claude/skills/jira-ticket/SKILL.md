@@ -41,7 +41,7 @@ description: >
 | ファイル | 内容 | 参照タイミング |
 |---------|------|--------------|
 | `references/workflow.md` | ワークフロー詳細手順（判定テーブル例・API 手順） | Phase 1-4: 各フェーズの実行時 |
-| `references/templates.md` | description テンプレート（実装/合意形成）、セクション選択の指針、issue type の選び方 | Phase 2: ドラフト作成時 |
+| `references/templates.md` | description テンプレート、セクション選択の指針、issue type の選び方 | Phase 2: ドラフト作成時 |
 | `references/pitfalls.md` | よくある落とし穴（タイトル不一致、検証不能な完了条件、スコープ矛盾など） | Phase 2-3: ドラフト作成・レビュー反映時 |
 
 ## 関連スキル
