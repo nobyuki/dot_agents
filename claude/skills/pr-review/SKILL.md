@@ -20,7 +20,7 @@ description: >
 
 | メモリ名 | 用途 |
 |---------|------|
-| `project/plan_docs_location` | 計画書の保存先パス（設計判断の照合用） |
+| `project/plan_docs_location` | 計画書の保存先パス。必要に応じて公開状態を含む（設計判断の照合用） |
 
 GitHub PR のコードレビューを実施し、構造化された markdown レポートを出力する。
 

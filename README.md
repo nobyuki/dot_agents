@@ -56,7 +56,7 @@ ln -s /path/to/dot_agents/claude/skills ~/.claude/skills
 
 | メモリ名 | 用途 | 参照するスキル |
 |---------|------|--------------|
-| `project/plan_docs_location` | 計画書の保存先ディレクトリパスとコミットルール | plan-feature, plan-doc-update, plan-doc-review, impl-driver, verify-review, pr-review |
+| `project/plan_docs_location` | 計画書の保存先ディレクトリパス・コミットルール。必要に応じて公開状態（レビュアーに公開か非公開か）を含む | plan-feature, plan-doc-update, plan-doc-review, impl-driver, verify-review, pr-review |
 | `project/doc_survey_targets` | ドキュメント更新時のサーベイ対象ファイルリスト | plan-doc-update |
 | `project/architecture_knowledge` | アーキテクチャ構成、レイヤー配置、開発コマンド、ドキュメントディレクトリパス、コード変更パターン、既存計画書の参照 | plan-feature, plan-doc-update, impl-driver |
 | `project/jira_project_key` | JIRA のプロジェクトキー | jira-ticket, jira-sprint-report |
