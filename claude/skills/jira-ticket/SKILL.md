@@ -1,7 +1,7 @@
 ---
 name: jira-ticket
 description: >
-  JIRA チケット（タスク・バグ等）のタイトルと description を起案し、
+  JIRA チケット（タスク・バグ・方針策定等）のタイトルと description を起案し、
   ユーザーのレビューを経て Atlassian MCP 経由で登録するスキル。
   「チケットを作って」「JIRA に登録して」「チケット案を作成して」と言われたときに使う。
   チケットの更新・ステータス変更には使わない。
