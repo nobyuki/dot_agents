@@ -30,6 +30,7 @@ ln -s /path/to/dot_agents/claude/skills ~/.claude/skills
 |---------|------|
 | cross-verify | AI アシスタントが生成したテキストを現行コード・ドキュメントへ事実照合するスキル |
 | impl-driver | 計画書に基づいてコード実装を進めるペアプログラミングのドライバースキル |
+| jira-sprint-report | JIRA スプリントのチケットを取得し、粒度チェック・SP概算・推奨アクションを含むレポートを生成するスキル |
 | jira-ticket | JIRA チケットのタイトルと description を起案し、Atlassian MCP 経由で登録するスキル |
 | plan-doc-review | プロジェクトの実装計画書をレビューするスキル |
 | plan-doc-update | プロジェクトのドキュメント更新計画書を作成するスキル |
