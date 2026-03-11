@@ -22,7 +22,8 @@ git status
 ```
 
 - ベースブランチはデフォルトで `develop`（CLAUDE.md の Main branch 設定に従う）
-- リモートに push されていない場合、ユーザーに push を依頼して待つ
+- リモート追跡状態と `git fetch` で origin にトピックブランチと同名のブランチが push 済みかを確認する
+- push されていない場合のみ、ユーザーに push を依頼して待つ
 - 未コミットの変更がある場合、ユーザーに確認する
 
 ## Phase 2: PR 案の作成
