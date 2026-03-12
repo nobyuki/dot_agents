@@ -20,7 +20,7 @@ description: >
 
 ## ワークフロー
 
-1. **Phase 1: ブランチ状態の確認** — git log/diff/status でベースブランチからの差分・リモート追跡状態・未コミット変更を並列取得
+1. **Phase 1: ブランチ状態の確認** — git log/diff/status でベースブランチからの差分・未コミット変更を並列取得
 2. **Phase 2: PR 案の作成** — `/tmp/pr-{branch-short-name}.md` にタイトル・Summary・Changes・Notes・Test plan を出力
 3. **Phase 3: レビュー反映** — ユーザーやレビューツールのフィードバックを検証し、妥当な指摘のみ反映（繰り返し）
 4. **Phase 4: PR 登録** — ユーザーの承認後に `gh pr create` で登録し、PR URL を返す

@@ -14,16 +14,11 @@ git diff <base>..HEAD --stat
 # 差分の詳細（必要に応じて）
 git diff <base>..HEAD
 
-# リモート追跡状態
-git rev-parse --abbrev-ref --symbolic-full-name '@{u}'
-
 # 未コミットの変更
 git status
 ```
 
 - ベースブランチはデフォルトで `develop`（CLAUDE.md の Main branch 設定に従う）
-- リモート追跡状態と `git fetch` で origin にトピックブランチと同名のブランチが push 済みかを確認する
-- push されていない場合のみ、ユーザーに push を依頼して待つ
 - 未コミットの変更がある場合、ユーザーに確認する
 
 ## Phase 2: PR 案の作成
@@ -77,6 +72,8 @@ git status
 ## Phase 4: PR 登録
 
 ユーザーの「作成して」「登録して」を待ってから実行する。
+
+**登録前チェック:** `@{u}`（upstream）で push 済みかを確認する。upstream が未設定の場合は `git fetch` で origin に同名ブランチがあるかを補助的に確認する。push されていない場合のみ、ユーザーに push を依頼して待つ。
 
 ```bash
 gh pr create \
