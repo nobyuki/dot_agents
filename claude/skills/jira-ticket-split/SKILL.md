@@ -28,6 +28,8 @@ description: >
 | `searchJiraIssuesUsingJql` | 元チケットの詳細取得 | Phase 1 |
 | `getJiraProjectIssueTypesMetadata` | issue type の取得 | Phase 3 |
 | `createJiraIssue` | 子チケットの作成 | Phase 3 |
+| `getIssueLinkTypes` | リンクタイプ一覧の取得 | Phase 3 |
+| `createIssueLink` | 元チケットと子チケットの分割リンク作成 | Phase 3 |
 | `updateJiraIssue` | description 追記・ラベル付与 | Phase 4 |
 
 ## 鉄則
