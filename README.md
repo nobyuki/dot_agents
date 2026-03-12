@@ -32,6 +32,7 @@ ln -s /path/to/dot_agents/claude/skills ~/.claude/skills
 | impl-driver | 計画書に基づいてコード実装を進めるペアプログラミングのドライバースキル |
 | jira-sprint-report | JIRA スプリントのチケットを取得し、粒度チェック・SP概算・推奨アクションを含むレポートを生成するスキル |
 | jira-ticket | JIRA チケットのタイトルと description を起案し、Atlassian MCP 経由で登録するスキル |
+| jira-ticket-split | JIRA チケットの粒度チェックを行い、分割子チケットを自動生成してユーザー承認後に登録するスキル |
 | plan-doc-review | プロジェクトの実装計画書をレビューするスキル |
 | plan-doc-update | プロジェクトのドキュメント更新計画書を作成するスキル |
 | plan-feature | プロジェクトの機能実装計画書を作成するスキル |
@@ -59,7 +60,7 @@ ln -s /path/to/dot_agents/claude/skills ~/.claude/skills
 | `project/plan_docs_location` | 計画書の保存先ディレクトリパス・コミットルール。必要に応じて公開状態（レビュアーに公開か非公開か）を含む | plan-feature, plan-doc-update, plan-doc-review, impl-driver, verify-review, pr-review |
 | `project/doc_survey_targets` | ドキュメント更新時のサーベイ対象ファイルリスト | plan-doc-update |
 | `project/architecture_knowledge` | アーキテクチャ構成、レイヤー配置、開発コマンド、ドキュメントディレクトリパス、コード変更パターン、既存計画書の参照 | plan-feature, plan-doc-update, impl-driver |
-| `project/jira_project_key` | JIRA のプロジェクトキー | jira-ticket, jira-sprint-report |
+| `project/jira_project_key` | JIRA のプロジェクトキー | jira-ticket, jira-ticket-split, jira-sprint-report |
 
 #### メモリの登録方法
 
