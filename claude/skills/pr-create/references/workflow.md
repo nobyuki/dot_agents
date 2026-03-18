@@ -53,6 +53,10 @@ git status
 - [ ] <未検証項目>
 ```
 
+**Test plan の書き方:**
+- typecheck / lint / 全テスト PASS は 1 項目にまとめる（個別に分けない）
+- テストファイル数・テストケース数などの件数表記は入れない
+
 **セクション選択の指針:**
 - Summary は必須
 - Changes は差分ファイルが多い場合（目安5ファイル以上）に追加
@@ -73,7 +77,33 @@ git status
 
 ユーザーの「作成して」「登録して」を待ってから実行する。
 
-**登録前チェック:** `@{u}`（upstream）で push 済みかを確認する。upstream が未設定の場合は `git fetch` で origin に同名ブランチがあるかを補助的に確認する。push されていない場合のみ、ユーザーに push を依頼して待つ。
+**登録前チェック:** upstream で push 済みかを確認する。upstream が未設定の場合は `git fetch` で origin に同名ブランチがあるかを補助的に確認する。push されていない場合のみ、ユーザーに push を依頼して待つ。
+
+```bash
+# upstream が設定済みか確認
+BRANCH=$(git branch --show-current)
+if git rev-parse --abbrev-ref --symbolic-full-name '@{u}' &>/dev/null; then
+  # upstream あり → HEAD がリモートに含まれているか確認
+  if [ "$(git rev-list '@{u}'..HEAD --count)" -eq 0 ]; then
+    echo "push 済み"
+  else
+    echo "未 push のローカルコミットあり — ユーザーに push を依頼"
+  fi
+else
+  # upstream 未設定 → origin に同名ブランチがあるか補助確認
+  git fetch origin
+  if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+    # 同名ブランチあり → HEAD がリモートに含まれているか確認
+    if [ "$(git rev-list "origin/$BRANCH"..HEAD --count)" -eq 0 ]; then
+      echo "push 済み"
+    else
+      echo "未 push のローカルコミットあり — ユーザーに push を依頼"
+    fi
+  else
+    echo "push されていません — ユーザーに push を依頼"
+  fi
+fi
+```
 
 ```bash
 gh pr create \
