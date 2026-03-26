@@ -36,6 +36,8 @@
 |----|--------|----------|------|
 | {ID} | {Must Fix / Should Fix / Nit} | {Process / Correctness / Security / Performance / Maintainability / Documentation} | {概要} |
 
+（Nit を含む場合は「対応方針」列を追加する。分類フローは quality-standards.md「Nit の対応方針分類と Approve 整合性」を参照）
+
 ### Security follow-up (must create ticket)
 
 （該当がある場合のみ。セキュリティ上の既存問題や、本 PR のスコープ外だが要チケット化の事項）
@@ -120,6 +122,19 @@
 
 ## 再レビュー（Nth round）
 
+### セクション順序（再レビュー）
+
+再レビューでも読み手が最初に結論と新規の要対応事項を把握できることを優先する。前回指摘の対応確認は「過去の指摘が解消されたか」の検証であり、新規 Findings の後に配置する。
+
+1. **概要** — 前回レビューへのリンク、修正コミット一覧、変更ファイル
+2. **総合評価** — Approve / Request Changes、Findings テーブル、フォローアップ推奨
+3. **Findings 詳細** — 新規 Findings の詳細（なければ省略）
+4. **前回指摘の対応確認** — 前回 Finding の対応状況テーブル + 各 Finding の対応検証
+5. **PR 上のレビューコメント確認**（該当がある場合）
+6. **事実検証結果**（該当がある場合）
+7. **デグレチェック**
+8. **まとめ**
+
 ```
 # PR #{number} 再レビュー結果（{N}th round）
 
@@ -142,6 +157,8 @@
 | ID | 重要度 | カテゴリ | 概要 |
 |----|--------|----------|------|
 | {ID} | {Must Fix / Should Fix / Nit} | {カテゴリ} | {概要} |
+
+（Nit を含む場合は「対応方針」列を追加する。分類フローは quality-standards.md「Nit の対応方針分類と Approve 整合性」を参照）
 
 （新規の指摘がなければ「新規 Findings なし」と明記）
 
