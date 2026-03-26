@@ -42,6 +42,7 @@ GitHub PR のコードレビューを実施し、構造化された markdown レ
 | `references/templates.md` | レポートテンプレート | Step 4: レポート出力時 |
 | `references/quality-standards.md` | 品質基準・重要度分類・他ツールマージ | Step 2: 差分分析時 |
 | `references/finding-numbering.md` | Finding ナンバリング規則 | Step 4: レポート出力時 |
+| `references/pitfalls.md` | レビュー時の落とし穴（invalid 判定基準・対応済み申告の検証） | Step 3: 再レビュー時、Step 3.5: ボットレビュー検証時 |
 
 ## 関連スキル
 
