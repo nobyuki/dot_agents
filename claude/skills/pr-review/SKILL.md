@@ -21,6 +21,7 @@ description: >
 | メモリ名 | 用途 |
 |---------|------|
 | `project/plan_docs_location` | 計画書の保存先パス。設計判断の照合が必要な場合のみ使用 |
+| `project/review_references` | プロジェクト固有の参照ルール（ドメインとドキュメントの対応等）。Finding の参照先判定（workflow.md Step 2.5）で使用 |
 
 GitHub PR のコードレビューを実施し、構造化された markdown レポートを出力する。
 
